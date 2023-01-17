@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css link -->
+    <link rel="icon" href="img/coding.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <title>ZeWolfus</title>
+</head>
+<body>
+    <header class="header center">
+        <div class="logo">
+            <h1 onclick="window.location.href='index.html'"><span class="logo-span">Z</span>W</h1>
+        </div>
+        <div class="link">
+            <a href="index.html" class="active">Home</a>
+            <a href="#services">Technology</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="more" onclick="showMoreLinks()" id="moreBtn"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </header>
+<!-- BANNER -->
+    <section class="banner center">
+        <div class="banner-img-div">
+            <img src="img/coding.png" class="banner-img">
+        </div>
+        <div class="banner-info">
+            <h1><span style="color: #fff;">Z</span>e<span style="clear: #fff;">W</span>olfus</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate, neque maxime accusantium voluptatem labore veniam beatae itaque optio earum quo esse, eos, laborum reprehenderit obcaecati dolor omnis dolores quaerat.</h3>
+            <div class="banner-btn-div">
+                <button class="start-btn"><a href="register.html" style="text-decoration: none; color: #fff;"><i class="fa-solid fa-play"></i>Get Started</a></button>
+                <button class="login-btn"><a href="register.html" style="text-decoration: none; color: #fff;"><i class="fa-solid fa-key"></i>Login</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax">
+        <img src="img/waves.png" alt="" class="upper-img">
+        <h1>Lorem, ipsum dolor.</h1>
+        <img src="img/waves2.png" alt="" class="lower-img">
+    </div>
+    <h1 class="services" id="services"><span style="color: #fff;">Z</span>e<span style="color: #fff;">W</span>olfus</h1>
+    <div class="cards-div center">
+        <div class="card">
+            <h1>React</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, earum.</p>
+            <img src="img/react.png" alt="">
+        </div>
+
+        <div class="card">
+            <h1>React</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, earum.</p>
+            <img src="img/nodelogo.png" alt="">
+        </div>
+
+        <div class="card">
+            <h1>React</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, earum.</p>
+            <img src="img/express.png" alt="">
+        </div>
+
+        <div class="card">
+            <h1>React</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, earum.</p>
+            <img src="img/mongologo.png" alt="">
+        </div>
+
+        <div class="card">
+            <h1>React</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, earum.</p>
+            <img src="img/html.png" alt="">
+        </div>
+
+        <div class="card">
+            <h1>React</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, earum.</p>
+            <img src="img/css.png" alt="">
+        </div>
+
+        <div class="card">
+            <h1>React</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, earum.</p>
+            <img src="img/js.png" alt="">
+        </div>
+
+        <div class="card">
+            <h1>React</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, earum.</p>
+            <img src="img/python.png" alt="">
+        </div>
+    </div>
+
+    <!-- section starts ======================================-->
+
+    <section class="about-us center" id="about">
+        <div class="about-inner">
+            <div class="inner-1">
+                <h1 class="services" id="services"><span style="color: #fff;">A</span>bout <span style="color: #fff;">U</span>s</h1>
+                <h4 class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat ea nemo omnis assumenda, sunt voluptatum at ab est labore. At quo tenetur rem! Voluptate placeat reprehenderit eos nisi, corporis et iure doloribus minus perferendis in, quos, facere similique repellat!</h4>
+            </div>
+
+            <div class="inner-2">
+                <img src="img/man.png" alt="" class="about-img">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact us start============================ -->
+
+    <section class="contact-us" id="contact">
+        <h1 class="services" id="services"><span style="color: #fff;">C</span>ontact <span style="color: #fff;">U</span>s</h1>
+        <div class="form-div center">
+            <label for="" style="color: #fff;">Name</label>
+            <input type="text" class="input" placeholder="enter your name...">
+            <label for="" style="color: #fff;">Email</label>
+            <input type="email" class="input" placeholder="enter your email...">
+            <label for="" style="color: #fff;">Message</label>
+            <textarea class="input" style="height: 80px;" placeholder="enter your message"></textarea>
+
+            <button class="start-btn center-block"><i class="fa-solid fa-paper-plane"></i>Send</button>
+        </div>
+    </section>
+
+    <button id="scrollBtn" onclick="topScroll()" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- footer================================ -->
+
+    <footer class="footer">
+        <div>
+            <h5>ZeWolfus</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>&copy 2023 ZeWolfus</p>
+        </div>
+        <div class="footer-second">
+            <p>Reach us at:</p>
+            <p>info@gmail.com</p>
+            <div class="icon-flex">
+                <a><i class="fa-brands fa-instagram"></i></a>
+                <a><i class="fa-brands fa-linkedin-in"></i></a>
+                <a><i class="fa-brands fa-github"></i></a>
+                <a><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
